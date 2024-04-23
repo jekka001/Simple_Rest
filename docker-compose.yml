@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  app:
+    image: 'simple:latest'
+    container_name: Simple_Rest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080"
